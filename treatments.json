@@ -1,0 +1,321 @@
+{
+  "Apple___Apple_scab": {
+    "disease_name": "Apple Scab",
+    "description": "Fungal disease causing olive-green to dark brown spots on apple leaves and fruits.",
+    "treatment": [
+      "Apply captan or myclobutanil fungicide",
+      "Remove and destroy infected leaves and fruits",
+      "Use neem oil spray as an organic treatment",
+      "Avoid overhead irrigation"
+    ],
+    "prevention": [
+      "Prune trees for proper airflow",
+      "Use resistant apple varieties",
+      "Clean fallen debris regularly"
+    ]
+  },
+  "Apple___Black_rot": {
+    "disease_name": "Apple Black Rot",
+    "description": "Fungal disease causing black rotten lesions on apple fruits and leaves.",
+    "treatment": [
+      "Spray thiophanate-methyl fungicide",
+      "Remove infected branches and fruits",
+      "Use copper fungicide during early infection"
+    ],
+    "prevention": [
+      "Sanitize pruning tools",
+      "Remove mummified fruits from trees"
+    ]
+  },
+  "Apple___Cedar_apple_rust": {
+    "disease_name": "Cedar Apple Rust",
+    "description": "Fungal disease producing orange-yellow spots on apple leaves.",
+    "treatment": [
+      "Apply sulfur or myclobutanil fungicide",
+      "Remove nearby cedar hosts if possible",
+      "Use bio-fungicide sprays"
+    ],
+    "prevention": [
+      "Plant resistant cultivars",
+      "Ensure proper air circulation"
+    ]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "disease_name": "Cherry Powdery Mildew",
+    "description": "White powdery fungal growth on cherry leaves and shoots.",
+    "treatment": [
+      "Apply potassium bicarbonate fungicide",
+      "Use sulfur-based fungicide",
+      "Prune infected shoots"
+    ],
+    "prevention": [
+      "Avoid excessive nitrogen fertilizers",
+      "Maintain proper spacing"
+    ]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "disease_name": "Corn Gray Leaf Spot",
+    "description": "Fungal disease causing rectangular gray lesions on corn leaves.",
+    "treatment": [
+      "Apply azoxystrobin fungicide",
+      "Remove infected crop residue"
+    ],
+    "prevention": [
+      "Practice crop rotation",
+      "Use resistant hybrids"
+    ]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "disease_name": "Corn Common Rust",
+    "description": "Rust disease causing reddish-brown pustules on corn leaves.",
+    "treatment": [
+      "Use propiconazole fungicide",
+      "Apply foliar fungicide during early infection"
+    ],
+    "prevention": [
+      "Plant resistant corn varieties",
+      "Monitor fields regularly"
+    ]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "disease_name": "Corn Northern Leaf Blight",
+    "description": "Fungal disease causing long cigar-shaped lesions on leaves.",
+    "treatment": [
+      "Apply pyraclostrobin fungicide",
+      "Destroy infected crop debris"
+    ],
+    "prevention": [
+      "Rotate crops yearly",
+      "Use resistant hybrids"
+    ]
+  },
+  "Grape___Black_rot": {
+    "disease_name": "Grape Black Rot",
+    "description": "Fungal infection causing black shriveled grapes and leaf spots.",
+    "treatment": [
+      "Apply mancozeb fungicide",
+      "Prune infected vines"
+    ],
+    "prevention": [
+      "Ensure good vine ventilation",
+      "Remove diseased fruits"
+    ]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "disease_name": "Grape Esca (Black Measles)",
+    "description": "Complex fungal disease affecting grapevine wood and leaves.",
+    "treatment": [
+      "Remove infected wood",
+      "Apply fungicidal wound protectants"
+    ],
+    "prevention": [
+      "Avoid pruning during wet weather",
+      "Disinfect pruning tools"
+    ]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "disease_name": "Grape Leaf Blight",
+    "description": "Fungal disease causing brown necrotic lesions on grape leaves.",
+    "treatment": [
+      "Apply copper fungicide",
+      "Remove infected foliage"
+    ],
+    "prevention": [
+      "Maintain vineyard sanitation",
+      "Avoid excessive humidity"
+    ]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "disease_name": "Citrus Greening",
+    "description": "Serious bacterial disease spread by Asian citrus psyllid.",
+    "treatment": [
+      "Use insecticides against psyllids",
+      "Apply nutritional sprays",
+      "Remove severely infected trees"
+    ],
+    "prevention": [
+      "Control psyllid population",
+      "Use certified disease-free seedlings"
+    ]
+  },
+  "Peach___Bacterial_spot": {
+    "disease_name": "Peach Bacterial Spot",
+    "description": "Bacterial disease causing dark lesions on peach leaves and fruits.",
+    "treatment": [
+      "Apply copper bactericide",
+      "Use streptomycin spray where recommended"
+    ],
+    "prevention": [
+      "Avoid overhead irrigation",
+      "Prune infected branches"
+    ]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "disease_name": "Bell Pepper Bacterial Spot",
+    "description": "Bacterial infection causing water-soaked leaf lesions.",
+    "treatment": [
+      "Apply copper-based bactericide",
+      "Remove infected plants"
+    ],
+    "prevention": [
+      "Use certified seeds",
+      "Avoid working in wet fields"
+    ]
+  },
+  "Potato___Early_blight": {
+    "disease_name": "Potato Early Blight",
+    "description": "Fungal disease producing concentric ring spots on leaves.",
+    "treatment": [
+      "Apply chlorothalonil fungicide",
+      "Remove infected foliage"
+    ],
+    "prevention": [
+      "Practice crop rotation",
+      "Avoid overhead watering"
+    ]
+  },
+  "Potato___Late_blight": {
+    "disease_name": "Potato Late Blight",
+    "description": "Highly destructive fungal-like disease causing rapid leaf decay.",
+    "treatment": [
+      "Apply copper fungicide or mancozeb",
+      "Destroy infected plants immediately"
+    ],
+    "prevention": [
+      "Use certified seed potatoes",
+      "Avoid excessive field moisture"
+    ]
+  },
+  "Squash___Powdery_mildew": {
+    "disease_name": "Squash Powdery Mildew",
+    "description": "Fungal disease producing white powdery growth on squash leaves.",
+    "treatment": [
+      "Apply sulfur fungicide",
+      "Use neem oil spray"
+    ],
+    "prevention": [
+      "Provide proper spacing",
+      "Avoid overcrowding"
+    ]
+  },
+  "Strawberry___Leaf_scorch": {
+    "disease_name": "Strawberry Leaf Scorch",
+    "description": "Fungal disease causing reddish-purple spots and leaf scorching.",
+    "treatment": [
+      "Apply captan fungicide",
+      "Remove infected leaves"
+    ],
+    "prevention": [
+      "Improve air circulation",
+      "Avoid overhead irrigation"
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "disease_name": "Tomato Bacterial Spot",
+    "description": "Bacterial disease causing dark leaf and fruit lesions.",
+    "treatment": [
+      "Apply copper bactericide",
+      "Use disease-free seeds"
+    ],
+    "prevention": [
+      "Rotate crops",
+      "Avoid handling wet plants"
+    ]
+  },
+  "Tomato___Early_blight": {
+    "disease_name": "Tomato Early Blight",
+    "description": "Fungal disease causing target-like spots on leaves.",
+    "treatment": [
+      "Apply chlorothalonil fungicide",
+      "Remove infected leaves"
+    ],
+    "prevention": [
+      "Mulch around plants",
+      "Maintain good airflow"
+    ]
+  },
+  "Tomato___Late_blight": {
+    "disease_name": "Tomato Late Blight",
+    "description": "Aggressive disease causing dark lesions and fruit rot.",
+    "treatment": [
+      "Apply copper-based fungicide",
+      "Destroy infected plants"
+    ],
+    "prevention": [
+      "Avoid excessive humidity",
+      "Use resistant varieties"
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "disease_name": "Tomato Leaf Mold",
+    "description": "Fungal disease causing yellow spots and mold on leaf undersides.",
+    "treatment": [
+      "Apply chlorothalonil fungicide",
+      "Increase greenhouse ventilation"
+    ],
+    "prevention": [
+      "Reduce humidity",
+      "Avoid overcrowding"
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "disease_name": "Tomato Septoria Leaf Spot",
+    "description": "Fungal disease causing small circular spots on tomato leaves.",
+    "treatment": [
+      "Apply copper fungicide",
+      "Remove infected lower leaves"
+    ],
+    "prevention": [
+      "Rotate crops yearly",
+      "Keep foliage dry"
+    ]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "disease_name": "Tomato Spider Mites",
+    "description": "Pest infestation causing yellow speckling and leaf drying.",
+    "treatment": [
+      "Apply miticide or insecticidal soap",
+      "Use neem oil spray"
+    ],
+    "prevention": [
+      "Maintain adequate humidity",
+      "Inspect plants regularly"
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "disease_name": "Tomato Target Spot",
+    "description": "Fungal disease causing circular lesions with concentric rings.",
+    "treatment": [
+      "Apply azoxystrobin fungicide",
+      "Remove infected plant debris"
+    ],
+    "prevention": [
+      "Ensure good air circulation",
+      "Avoid leaf wetness"
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "disease_name": "Tomato Yellow Leaf Curl Virus",
+    "description": "Viral disease causing yellow curled leaves and stunted growth.",
+    "treatment": [
+      "Control whiteflies using insecticides",
+      "Remove infected plants"
+    ],
+    "prevention": [
+      "Use resistant varieties",
+      "Install insect netting"
+    ]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "disease_name": "Tomato Mosaic Virus",
+    "description": "Viral disease causing mosaic patterns and leaf distortion.",
+    "treatment": [
+      "Remove infected plants",
+      "Disinfect gardening tools"
+    ],
+    "prevention": [
+      "Avoid tobacco contamination",
+      "Use virus-free seeds"
+    ]
+  }
+}
