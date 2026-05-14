@@ -13,7 +13,7 @@ env/
 *.pt
 *.pth
 *.h5
-*.ckpt
+*.ckpt 
 *.onnx
 *.pkl
 
