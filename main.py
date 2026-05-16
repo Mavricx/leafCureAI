@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+import cv2
 import json
 
 
@@ -21,13 +22,52 @@ def get_treatment(disease_name):
 
 
 #Tensorflow Model Prediction
+def confidence_to_severity(confidence):
+    if confidence < 0.5:
+        return "Low"
+    if confidence < 0.75:
+        return "Medium"
+    return "High"
+
+
+def load_image_array(test_image):
+    test_image.seek(0)
+    image = tf.keras.preprocessing.image.load_img(
+        test_image,
+        target_size=(128, 128)
+    )
+    image_arr = tf.keras.preprocessing.image.img_to_array(image)
+    return image_arr / 255.0
+
+
+def generate_heatmap_images(image_arr):
+    attention_map = np.mean(image_arr, axis=-1)
+    attention_map = cv2.GaussianBlur(attention_map, (15, 15), 0)
+    attention_map = cv2.normalize(
+        attention_map,
+        None,
+        0,
+        255,
+        cv2.NORM_MINMAX
+    )
+    attention_map = attention_map.astype(np.uint8)
+
+    heatmap = cv2.applyColorMap(attention_map, cv2.COLORMAP_JET)
+    heatmap = cv2.cvtColor(heatmap, cv2.COLOR_BGR2RGB)
+
+    original = (image_arr * 255).astype(np.uint8)
+    superimposed = cv2.addWeighted(original, 0.6, heatmap, 0.4, 0)
+    return original, superimposed
+
+
 def model_prediction(test_image):
     model = tf.keras.models.load_model("trained_model.h5")
-    image = tf.keras.preprocessing.image.load_img(test_image,target_size=(128,128))
+    image = tf.keras.preprocessing.image.load_img(test_image, target_size=(128,128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr]) #convert single image to batch
     predictions = model.predict(input_arr)
-    return np.argmax(predictions) #return index of max element
+    confidence = float(np.max(predictions))
+    return np.argmax(predictions), confidence
 
 #Sidebar
 st.sidebar.title("Dashboard")
@@ -83,9 +123,12 @@ elif(app_mode=="Disease Recognition"):
         st.image(test_image,width=4,use_column_width=True)
     #Predict button
     if(st.button("Predict")):
+        if not test_image:
+            st.warning("Please upload an image first.")
+            st.stop()
         st.snow()
         st.write("Our Prediction")
-        result_index = model_prediction(test_image)
+        result_index, confidence = model_prediction(test_image)
         #Reading Labels
         class_name = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
                     'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 
@@ -123,4 +166,26 @@ elif(app_mode=="Disease Recognition"):
                 st.markdown("**Prevention:**")
                 for step in prevention_steps:
                     st.markdown("- {}".format(step))
+
+        severity = confidence_to_severity(confidence)
+        st.subheader("Severity of the Disease")
+        st.write(severity)
+
+        image_arr = load_image_array(test_image)
+        original, superimposed = generate_heatmap_images(image_arr)
+
+        st.subheader("Attention Heatmap")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image(
+                original,
+                caption="Original",
+                use_column_width=True
+            )
+        with col2:
+            st.image(
+                superimposed,
+                caption="Heatmap Overlay",
+                use_column_width=True
+            )
  
